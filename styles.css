@@ -497,3 +497,30 @@ h3 {
 .project-logo:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
+.about-hero {
+    margin-bottom: 20px; /* Reduce the bottom margin */
+    padding-bottom: 0; /* Ensure no extra padding */
+}
+
+.about-section {
+    margin-top: 0; /* Remove any unnecessary top margin */
+    padding-top: 10px; /* Adjust as needed */
+}
+.team-hero {
+    margin-bottom: 20px; /* Reduce the bottom margin */
+    padding-bottom: 0; /* Remove unnecessary padding */
+}
+
+.team-grid {
+    margin-top: 0; /* Remove any top margin */
+    padding-top: 10px; /* Adjust as needed */
+}
+.projects-hero {
+    margin-bottom: 20px; /* Reduce bottom margin */
+    padding-bottom: 0; /* Ensure no extra padding */
+}
+
+.project-item {
+    margin-top: 0; /* Remove unnecessary top margin */
+    padding-top: 10px; /* Adjust as needed */
+}

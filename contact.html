@@ -3,240 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asaria Industries</title>
+    <title>Contact - Asaria Industries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        .contact-section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        
-        .contact-intro {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .contact-title {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .contact-description {
-            font-size: 1rem;
-            color: #666;
-        }
-
+        /* Form-specific styles */
         .contact-form {
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .form-group-container {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
         .form-label {
-            font-size: 1rem;
-            margin-bottom: 8px;
-            color: #333;
+            font-weight: 500;
         }
 
         .form-input,
         .form-textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 1rem;
-            margin-top: 6px;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
         }
 
-        .form-input:focus,
-        .form-textarea:focus {
-            border-color: #4CAF50;
-            outline: none;
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
         }
 
         .form-submit {
-            background-color: #4CAF50;
+            width: 100%;
+            padding: 0.75rem;
+            background: #007bff;
             color: white;
-            font-size: 1.1rem;
-            padding: 12px 25px;
             border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .form-submit:hover {
-            background-color: #45a049;
-        }
-
-        /* Header & Footer Styles */
-        .header {
-            background-color: #333;
-            padding: 20px 0;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .logo {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-links a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-size: 1rem;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: #4CAF50;
-        }
-
-        .nav-links a.active {
-            color: #4CAF50;
-        }
-
-        .cta-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
             border-radius: 4px;
-            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
         }
-
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-
-        .footer-tagline {
-            color: #666;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 40px;
-        }
-
-        .footer-section h4 {
-            margin-bottom: 15px;
-            color: white;
-        }
-
-        .footer-section a {
-            color: #ddd;
-            text-decoration: none;
-        }
-
-        .footer-section a:hover {
-            color: #4CAF50;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-
     </style>
 </head>
+<!-- Rest of the HTML remains exactly the same -->
 <body>
-
-    <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <a href="/" class="logo">ASARIA INDUSTRIES<span class="bit-accent"></span></a>
+            <div class="nav-links">
+                <a href="projects.html">Projects<span class="bit-accent"></span></a>
+                <a href="about.html">About<span class="bit-accent"></span></a>
+                <a href="team.html">Team<span class="bit-accent"></span></a>
+                <a href="contact.html" class="cta-button active">Connect<span class="bit-accent"></span></a>
+            </div>
         </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="contact-intro">
-            <h2 class="contact-title">Get in Touch</h2>
-            <p class="contact-description">
-                Fill out the form below, and we'll get back to you as soon as possible.
-            </p>
-        </div>
-    
-        <!-- Contact Form -->
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-    
-            <!-- Hidden Fields for Web3Forms -->
-            <input type="hidden" name="access_key" value="6593ec1c-556c-4225-bb24-1322078bbf5b" />
-            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-            <input type="hidden" name="from_name" value="Asaria Industries" />
-    
-            <div class="form-group-container">
-                <div class="form-group">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required />
-                </div>
-    
-                <div class="form-group">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
-                </div>
-    
-                <div class="form-group">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea id="message" name="message" class="form-textarea" placeholder="Your message" required></textarea>
-                </div>
+    <main class="main-content">
+        <section class="contact-section">
+            <div class="contact-intro">
+                <h2 class="contact-title">Get in Touch</h2>
             </div>
-    
-            <button class="form-submit" type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <!-- Footer -->
+        
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6593ec1c-556c-4225-bb24-1322078bbf5b" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                <input type="hidden" name="from_name" value="Asaria Industries" />
+        
+                <div class="form-group-container">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required />
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Your message" required></textarea>
+                    </div>
+                </div>
+        
+                <button class="form-submit" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
                 <div class="footer-logo">ASARIA INDUSTRIES<span class="bit-accent"></span></div>
                 <p class="footer-tagline">Engineering Tomorrow</p>
             </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Navigate<span class="bit-accent"></span></h4>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Team</a>
+                    <a href="contact.html">Connect</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect<span class="bit-accent"></span></h4>
+                    <a href="mailto:contact@asariaindustries.com">Email</a>
+                    <a href="https://linkedin.com/company/asaria-industries" target="_blank">LinkedIn</a>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Asaria Industries LLC. All rights reserved<span class="bit-accent"></span></p>
         </div>
     </footer>
-
 </body>
 </html>

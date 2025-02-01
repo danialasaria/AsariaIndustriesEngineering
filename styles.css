@@ -463,3 +463,37 @@ h3 {
 .solution-card p {
     color: var(--text-light);
 } 
+/* Add this to your CSS file */
+
+.team-image {
+    width: 100%;          /* Make image take up the full width of the container */
+    height: auto;         /* Maintain aspect ratio */
+    object-fit: cover;    /* Ensure image covers the space without distortion */
+    border-radius: 50%;   /* Optional: if you want circular images */
+    max-width: 250px;     /* Limit the maximum width */
+    max-height: 250px;    /* Limit the maximum height */
+    margin: 0 auto;       /* Center the image */
+}
+.projects-hero {
+    margin-bottom: 20px; /* Reduces the space below the hero section */
+}
+
+.project-item {
+    margin-top: 10px; /* Adds a small gap between sections */
+    padding: 10px; /* Adds padding within the section to make it less cramped */
+}
+
+.project-item h2 {
+    margin-top: 0; /* Removes the extra space above the title */
+}
+
+.project-logo {
+    width: 150px; /* Adjust the size of the logo */
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}

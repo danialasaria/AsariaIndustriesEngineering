@@ -1,21 +1,19 @@
 'use client'
 
 import { usePathname, useRouter } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import React from 'react'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
-
-// Keep track of logo clicks at module level
-let wasLogoClicked = false
+import { useIntro } from './context/IntroContext'
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname()
   const router = useRouter()
   const isHomePage = pathname === '/'
-
+  const { shouldShowIntro, setShouldShowIntro } = useIntro()
   useEffect(() => {
-    if (isHomePage && !wasLogoClicked) {
+    if (isHomePage && shouldShowIntro) {
       document.body.style.overflow = 'hidden'
       
       // Prefetch all routes during the intro animation
@@ -28,24 +26,24 @@ export default function ClientLayout({ children }) {
     return () => {
       document.body.style.overflow = ''
     }
-  }, [isHomePage, router])
+  }, [isHomePage, shouldShowIntro, router])
 
   const onIntroComplete = () => {
     document.body.style.overflow = ''
-    wasLogoClicked = false // Reset after intro completes
+    setShouldShowIntro(false)
   }
 
-  const handleLogoClick = (e) => {
+  const handleLogoClick = async (e) => {
     e.preventDefault()
-    wasLogoClicked = true
-    router.push('/')
+    setShouldShowIntro(false)
+    await router.push('/')
   }
 
   return (
     <div className="app-container">
       <Navigation onLogoClick={handleLogoClick} />
       {React.cloneElement(children, { 
-        shouldShowIntro: isHomePage && !wasLogoClicked,
+        shouldShowIntro: isHomePage && shouldShowIntro,
         onIntroComplete
       })}
       <Footer />

@@ -2,6 +2,7 @@ import { Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import { metadata } from './metadata'
 import ClientLayout from './ClientLayout'
+import { Providers } from './providers'
 
 // Optimize font loading
 const spaceGrotesk = Space_Grotesk({ 
@@ -36,9 +37,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning={true}>
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+        <Providers children={children} />
       </body>
     </html>
   )

@@ -2,9 +2,10 @@
 
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import Image from 'next/image'
+import { useIntro } from './context/IntroContext'
 
-export default function Home({ shouldShowIntro, onIntroComplete }) {
+export default function Home({ onIntroComplete }) {
+  const { shouldShowIntro } = useIntro()
   const canvasRef = useRef(null)
   const introRef = useRef(null)
 
@@ -44,7 +45,7 @@ export default function Home({ shouldShowIntro, onIntroComplete }) {
         duration: 1.2,
         stagger: 0.12,
         ease: "power2.out",
-        delay: 0.5 // Delay text animation to let globe start first
+        delay: 0.5
       })
     }
 
@@ -58,10 +59,7 @@ export default function Home({ shouldShowIntro, onIntroComplete }) {
     const startTime = Date.now()
     const totalDuration = 4000
 
-    // Start globe animation first
     requestAnimationFrame(animate)
-    
-    // Then start text animation after a short delay
     setTimeout(initTextAnimation, 200)
 
     function drawGlobe(radius, rotation) {

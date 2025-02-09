@@ -1,5 +1,3 @@
-import { Sparkles } from 'lucide-react'
-
 export const metadata = {
   title: 'Careers | Asaria Industries',
   description: 'Join our team of exceptional professionals at Asaria Industries.',

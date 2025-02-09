@@ -11,9 +11,10 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-section">
             <h4>Navigate</h4>
-            <Link href="/projects">Projects</Link>
             <Link href="/about">About</Link>
             <Link href="/team">Team</Link>
+            <Link href="/careers">Careers</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/contact">Connect</Link>
           </div>
           <div className="footer-section">

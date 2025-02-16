@@ -36,7 +36,7 @@ export default function Team() {
           <div className="member-info">
             <h3>Danial Asaria<span className="bit-accent"></span></h3>
             <p className="member-title">Founder & CEO</p>
-            <p className="member-bio">With a background in engineering at companies like Anduril, Snapchat, and Zanbato, I'm passionate about building software, investing, and entrepreneurship. I also enjoy teaching chess and supporting founders on their journey, learning from firms like 8VC, Draper Associates, and FCV.</p>
+            <p className="member-bio">Software is the wind in my sail. Previously I worked on mission autonomy at Anduril, ad infrastructure at Snapchat, and scaling private markets at Zanbato/8VC. In a past life I was a professional chess player, and I still run a global chess school as well as hold the world record for the youngest American to win every scholastic championship. I'm very fortunate to work with the brilliant, kind people here at Asaria Industries and I have no doubt in my mind that we are building something truly generational.</p>
             <div className="member-links">
               <a href="https://www.linkedin.com/in/danial-asaria/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
@@ -60,7 +60,7 @@ export default function Team() {
           <div className="member-info">
             <h3>Vincent Vu<span className="bit-accent"></span></h3>
             <p className="member-title">Advisor</p>
-            <p className="member-bio">I specialize in developing high-quality, user-first products. Previously, I worked at Coursera on platform services that support millions of learners globally. Now at Uplimit, I'm working with AI to enable effective upskilling for professionals and organizations. Engineering is my tool to create value and meaningful impact.</p>
+            <p className="member-bio">I'm a passionate self-taught engineer specializing in developing high-quality, user-centric products. Previously, I worked at Coursera on platform services that support millions of learners globally as well as a series A startup working on AI infra. Danial and I met in college leading our school hackathon where we created possibly the most complete set of open-source hackathon tools in the world.</p>
             <div className="member-links">
               <a href="https://www.linkedin.com/in/vmvu/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>

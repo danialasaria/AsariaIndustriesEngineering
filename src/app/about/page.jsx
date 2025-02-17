@@ -1,43 +1,30 @@
 export const metadata = {
-  title: 'About',
-  description: 'Learn about Asaria Industries - our mission, values, and commitment to innovation in technology and engineering.',
+  title: 'About | Asaria Industries',
+  description: 'Technical expertise for select clients - AI, scalable systems, and digital transformation.',
 }
 
 export default function About() {
   return (
     <main className="main-content">
       <section className="about-hero">
-        <h1>About Us<span className="bit-accent"></span></h1>
-        <p className="subtitle">Innovating for a brighter future</p>
+        <h1>About<span className="bit-accent"></span></h1>
       </section>
 
-      <section className="about-section">
-        <div className="about-text">
-          <h2>Our Mission<span className="bit-accent"></span></h2>
-          <p>At Asaria Industries, our mission is to leverage cutting-edge technology and engineering to solve complex challenges and create sustainable solutions. We aim to revolutionize industries through innovation, collaboration, and a relentless focus on quality and excellence.</p>
-        </div>
-        
-        <div className="about-text">
-          <h2>What We Do<span className="bit-accent"></span></h2>
-          <p>We specialize in developing high-impact solutions in a variety of industries, from technology and engineering to business strategy and consulting. Our team works with global clients to craft tailor-made strategies that drive operational efficiency, innovation, and long-term growth.</p>
-        </div>
+      <section className="about-content">
+        <div className="about-section">
+          <p className="about-intro">
+            We work with a select group of clients, bringing deep technical expertise 
+            to complex challenges. Our experience spans implementing AI systems in 
+            production, launching applications that scale to millions of users, and 
+            guiding successful digital transformations.
+          </p>
 
-        <div className="about-text">
-          <h2>Our Values<span className="bit-accent"></span></h2>
-          <ul>
-            <li>
-              <strong>Innovation</strong>
-              We strive to push the boundaries of what's possible and challenge the status quo.
-            </li>
-            <li>
-              <strong>Collaboration</strong>
-              We believe in the power of teamwork and partner with clients and experts to deliver the best outcomes.
-            </li>
-            <li>
-              <strong>Excellence</strong>
-              Every project we undertake is fueled by a commitment to the highest standards of quality and performance.
-            </li>
-          </ul>
+          <p className="about-intro">
+            Our approach is hands-on and focused. We take on a limited number of 
+            projects, ensuring each receives the full depth of our technical capabilities 
+            and attention. Whether it's system architecture, codebase audits, or 
+            strategic technical guidance, we deliver solutions that create lasting value.
+          </p>
         </div>
       </section>
     </main>

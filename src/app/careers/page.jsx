@@ -5,33 +5,50 @@ export const metadata = {
 
 export default function Careers() {
   return (
-    <div className="careers-container">
-      <main className="careers-page">
-        <section className="careers-hero">
-          <div className="hero-content">
-            <h1 className="hero-title">We're Hiring!</h1>
-          </div>
-        </section>
+    <main className="main-content">
+      <section className="careers-hero">
+        <h1>Careers<span className="bit-accent"></span></h1>
+      </section>
 
-        <section className="hiring-message">
-          <h2 className="hiring-heading">Are you a super technical person?</h2>
-          <div className="hiring-content">
-            <p className="hiring-description">
-              We are looking for exceptionally talented software professionals who are eager to challenge themselves.
-            </p>
-            <p className="hiring-description">
-              Don't see a role for yourself? Reach out anyway! We're always eager to connect!
-            </p>
-            <a 
+      <section className="careers-content">
+        <div className="careers-section">
+          <p className="careers-intro">
+            Asaria Industries is built around exceptional individuals. We take hiring seriously 
+            and are deeply committed to finding the best people - those who are not only 
+            brilliant at what they do, but are adept communicators and people we'll love 
+            working with.
+          </p>
+
+          <p className="careers-intro">
+            We work with businesses across different industries to solve complex technical 
+            challenges. Every role comes with significant ownership - when we succeed, you 
+            succeed. We value people who can learn rapidly, think independently, and craft 
+            effective solutions to difficult problems.
+          </p>
+
+          <div className="roles-list">
+            <div className="role-item">
+              <span>Software Engineer</span>
+            </div>
+            <div className="role-item">
+              <span>Software Engineer Intern</span>
+            </div>
+            <div className="role-item">
+              <span>Designer</span>
+            </div>
+            <div className="role-item">
+              <span>Growth Intern</span>
+            </div>
+          </div>
+
+          <a 
             href="mailto:danial@asariaindustries.com" 
-            className="apply-button"
-            aria-label="Apply now by sending an email"
+            className="cta-button"
           >
             Apply Now
           </a>
-          </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   )
 }

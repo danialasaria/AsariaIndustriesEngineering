@@ -3,6 +3,7 @@ import './globals.css'
 import { metadata } from './metadata'
 import ClientLayout from './ClientLayout'
 import { Providers } from './providers'
+import Script from 'next/script'
 
 // Optimize font loading
 const spaceGrotesk = Space_Grotesk({ 
@@ -28,16 +29,13 @@ export default function RootLayout({ children }) {
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
-
-        {/* Load Font Awesome asynchronously */}
-        <script 
-          defer
-          src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
-        />
       </head>
       <body suppressHydrationWarning={true}>
         <Providers children={children} />
+        <Script 
+          src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

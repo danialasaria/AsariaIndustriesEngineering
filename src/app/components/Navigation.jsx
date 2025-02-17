@@ -34,33 +34,43 @@ export default function Navigation({ onLogoClick }) {
         <Link href="/" onClick={onLogoClick} className="logo">
           ASARIA INDUSTRIES
         </Link>
-        
-        <button 
-          className={`mobile-menu-button ${isMenuOpen ? 'open' : ''}`} 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
 
-        <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <Link href="/about" onClick={closeMenu} className={pathname === '/about' ? 'active' : ''}>
+        {/* Desktop Navigation */}
+        <div className="nav-links">
+          <Link href="/about" className={pathname === '/about' ? 'active' : ''}>
             About
           </Link>
-          <Link href="/team" onClick={closeMenu} className={pathname === '/team' ? 'active' : ''}>
+          <Link href="/team" className={pathname === '/team' ? 'active' : ''}>
             Team
           </Link>
-          <Link href="/projects" onClick={closeMenu} className={pathname === '/projects' ? 'active' : ''}>
+          <Link href="/projects" className={pathname === '/projects' ? 'active' : ''}>
             Projects
           </Link>
-          <Link href="/careers" onClick={closeMenu} className={pathname === '/careers' ? 'active' : ''}>
+          <Link href="/careers" className={pathname === '/careers' ? 'active' : ''}>
             Careers
           </Link>
-          <Link href="/contact" onClick={closeMenu} className={pathname === '/contact' ? 'active' : ''}>
+          <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>
             Contact
           </Link>
+        </div>
+
+        {/* Mobile Navigation */}
+        <button 
+          className={`hamburger-button ${isMenuOpen ? 'open' : ''}`} 
+          onClick={toggleMenu} 
+          aria-label="Menu"
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+
+        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+          <Link href="/about" onClick={closeMenu}>About</Link>
+          <Link href="/team" onClick={closeMenu}>Team</Link>
+          <Link href="/projects" onClick={closeMenu}>Projects</Link>
+          <Link href="/careers" onClick={closeMenu}>Careers</Link>
+          <Link href="/contact" onClick={closeMenu}>Contact</Link>
         </div>
       </nav>
     </header>

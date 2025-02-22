@@ -28,19 +28,19 @@ export default function Careers() {
 
           <div className="roles-list">
             <div className="role-item">
-              <a href="https://tally.so/r/wAjjlo" target="_blank">Software Engineer</a>
+              <a href="https://tally.so/r/wvddpQ" target="_blank">Software Engineer</a>
             </div>
             <div className="role-item">
-              <a href="https://tally.so/r/wL660J" target="_blank">Software Engineer Intern</a>
+              <a href="https://tally.so/r/wAjj0k" target="_blank">Software Engineer Intern</a>
             </div>
             <div className="role-item">
-              <a href="https://tally.so/r/nGQQ0O" target="_blank">Designer</a>
+              <a href="https://tally.so/r/mB22gN" target="_blank">Designer</a>
             </div>
             <div className="role-item">
               <a href="https://tally.so/r/w7ppo2" target="_blank">Growth Intern</a>
             </div>
             <div className="role-item">
-              <a href="https://tally.so/r/wM77L8" target="_blank">General Interest</a>
+              <a href="https://tally.so/r/wkkkpM" target="_blank">General Interest</a>
             </div>
           </div>
         </div>

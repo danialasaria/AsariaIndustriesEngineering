@@ -28,25 +28,21 @@ export default function Careers() {
 
           <div className="roles-list">
             <div className="role-item">
-              <span>Software Engineer</span>
+              <a href="https://tally.so/r/wAjjlo" target="_blank">Software Engineer</a>
             </div>
             <div className="role-item">
-              <span>Software Engineer Intern</span>
+              <a href="https://tally.so/r/wL660J" target="_blank">Software Engineer Intern</a>
             </div>
             <div className="role-item">
-              <span>Designer</span>
+              <a href="https://tally.so/r/nGQQ0O" target="_blank">Designer</a>
             </div>
             <div className="role-item">
-              <span>Growth Intern</span>
+              <a href="https://tally.so/r/w7ppo2" target="_blank">Growth Intern</a>
+            </div>
+            <div className="role-item">
+              <a href="https://tally.so/r/wM77L8" target="_blank">General Interest</a>
             </div>
           </div>
-
-          <a 
-            href="mailto:danial@asariaindustries.com" 
-            className="cta-button"
-          >
-            Apply Now
-          </a>
         </div>
       </section>
     </main>

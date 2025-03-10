@@ -27,6 +27,11 @@ const nextConfig = {
         destination: 'https://tally.so/r/mB22gN',
         permanent: true,
       },
+      {
+        source: '/chelsea',
+        destination: 'https://chelseaai.vercel.app/',
+        permanent: true,
+      }
     ];
   },
 };

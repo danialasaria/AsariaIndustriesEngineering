@@ -60,7 +60,7 @@ export default function Team() {
           </div>
         </div>
 
-        <div className="team-member">
+        {/* <div className="team-member">
           <div className="member-image">
             <Image 
               src="/VincentVu.jpeg" 
@@ -82,7 +82,7 @@ export default function Team() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="team-member">
           <div className="member-image">

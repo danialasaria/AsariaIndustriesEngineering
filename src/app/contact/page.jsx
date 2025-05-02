@@ -19,6 +19,12 @@ export default function Contact() {
               <label htmlFor="name" className="form-label">Full Name</label>
               <input id="name" name="name" className="form-input" placeholder="Your name" type="text" required />
             </div>
+
+            <div className="form-group">
+              <label htmlFor="phone" className="form-label">Phone Number</label>
+              <input id="phone" name="phone" className="form-input" placeholder="Your phone number" type="tel" />
+              <p>By entering your phone number, you agree to receive messages from us.</p>
+            </div>
       
             <div className="form-group">
               <label htmlFor="email" className="form-label">Email Address</label>

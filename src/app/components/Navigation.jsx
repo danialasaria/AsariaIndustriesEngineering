@@ -67,7 +67,7 @@ export default function Navigation({ onLogoClick }) {
 
         <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <Link href="/about" onClick={closeMenu}>About</Link>
-          <Link href="/team" onClick={closeMenu}>Team</Link>
+          {/* <Link href="/team" onClick={closeMenu}>Team</Link> */}
           <Link href="/projects" onClick={closeMenu}>Projects</Link>
           <Link href="/careers" onClick={closeMenu}>Careers</Link>
           <Link href="/contact" onClick={closeMenu}>Contact</Link>

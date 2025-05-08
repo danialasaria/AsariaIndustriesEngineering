@@ -40,9 +40,9 @@ export default function Navigation({ onLogoClick }) {
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>
             About
           </Link>
-          <Link href="/team" className={pathname === '/team' ? 'active' : ''}>
+          {/* <Link href="/team" className={pathname === '/team' ? 'active' : ''}>
             Team
-          </Link>
+          </Link> */}
           <Link href="/projects" className={pathname === '/projects' ? 'active' : ''}>
             Projects
           </Link>

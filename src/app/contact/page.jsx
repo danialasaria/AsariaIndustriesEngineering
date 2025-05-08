@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="form-group">
               <label htmlFor="phone" className="form-label">Phone Number</label>
               <input id="phone" name="phone" className="form-input" placeholder="Your phone number" type="tel" />
-              <p>By entering your phone number, you agree to receive messages from us.</p>
+              {/* <p>By entering your phone number, you agree to receive messages from us.</p> */}
             </div>
       
             <div className="form-group">

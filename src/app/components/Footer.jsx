@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Navigate</h4>
             <Link href="/about">About</Link>
-            <Link href="/team">Team</Link>
+            {/* <Link href="/team">Team</Link> */}
             <Link href="/careers">Careers</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/contact">Connect</Link>

@@ -23,7 +23,14 @@ export default function Contact() {
             <div className="form-group">
               <label htmlFor="phone" className="form-label">Phone Number</label>
               <input id="phone" name="phone" className="form-input" placeholder="Your phone number" type="tel" />
-              {/* <p>By entering your phone number, you agree to receive messages from us.</p> */}
+            </div>
+
+            {/* SMS Opt-In Checkbox */}
+            <div className="form-group sms-optin">
+              <input id="sms_opt_in" name="sms_opt_in" type="checkbox" required className="form-checkbox" />
+              <label htmlFor="sms_opt_in" className="form-label sms-optin-label">
+                By checking this box, you consent to receive recurring SMS from Asaria Industries. Msg &amp; data rates may apply. Reply STOP to opt-out, HELP for help. <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              </label>
             </div>
       
             <div className="form-group">

@@ -20,7 +20,6 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Connect</h4>
             <a href="mailto:danial@asariaindustries.com">Email</a>
-            <a href="https://linkedin.com/company/asaria-industries" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
